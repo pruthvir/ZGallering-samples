@@ -1,0 +1,20 @@
+@mixin micro-clearfix {
+  &:before, &:after { content: ""; display: table; }
+  &:after { clear: both; }
+  & { *zoom: 1; }
+}
+
+@mixin borderedBox($width,$style,$color,$bgColor) {
+	border: $width $style $color;
+	border-left: 0;
+	border-right: 0;
+	background: $bgColor;
+}
+
+@mixin transitions($target,$duration,$type) {
+	-webkit-transition: $target,$duration,$type;
+	-moz-transition: $target $duration+s $type;
+	-ms-transition: $target $duration+s $type;
+	-o-transition: $target $duration+s $type;
+	transition: $target $duration+s $type;
+}

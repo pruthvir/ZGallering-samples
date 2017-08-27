@@ -1,0 +1,26 @@
+@import "compass";
+@import "framework/constants";
+@import "framework/mixins";
+
+@import "default/small";
+
+//Medium Resolution
+@media screen and (min-width:40.063em){
+	@import "default/medium";  
+}
+
+//Large Resolution
+@media screen and (min-width:64.063em){
+	@import "default/large";
+}
+
+//X-large Resolution
+@media screen and (min-width:90.063em){
+  @import "default/xlarge";
+}
+
+//XX-large Resolution
+@media screen and (min-width:120.063em){
+  @import "default/xxlarge";
+}
+

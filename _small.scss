@@ -1,0 +1,87 @@
+/* Global Styles */
+body{
+	font-family: Arial;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Bilbo', cursive;
+}
+
+p{
+	font-size: 12px;
+	line-height: 24px;
+}
+
+a{
+	color: $theme-color;
+	&:hover,&:active,&:focus{
+		color: $theme-color;
+		text-decoration: underline;
+	}
+}
+
+ul,li{
+	list-style: none;
+}
+
+#main-container{
+	background: $theme-color url(../images/pattern.png) repeat;
+}
+
+a.button, a.button:hover, a.button:focus{
+	background: $buttons-color;
+	padding: 6px 12px;
+	border-radius: 4px;
+}
+
+/* Header Styles */
+header{
+	background: #fff;
+	.top-bar,.title-area{
+		background: none;
+		height: 82px;
+	}
+	.top-bar{
+		.name{
+			max-width: 60%;
+			padding: 15px 0;
+		}
+		&.expanded{
+			.title-area{
+				background: none;
+			}	
+		}
+	}
+	.top-bar-section{
+		ul{
+			background: $theme-color;
+			li{
+				background: none;
+				a.button{
+					font-family: 'Bilbo', cursive;
+					background: none;
+					border: none;
+					top: 0;
+					&:hover,&:active,&:focus{
+						color: #fff;
+						background: $buttons-color;
+					}
+				}
+			}	
+		}	
+	}
+}
+
+.slider li img{
+	width: 100%;
+}
+
+
+footer{
+	padding: 15px 0;
+	background: $secondary-theme-color;
+	color: #fff;
+	a,a:hover,a:focus{
+		color: $buttons-color;
+	}
+}

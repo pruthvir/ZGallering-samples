@@ -1,0 +1,38 @@
+header{
+	margin-top: 30px;
+	height: 130px;
+	.top-bar{
+		position: relative;
+		top: 30px;
+		.title-area{
+			max-width: 30%;
+			.name{
+				max-width: 100%;
+				padding: 8px 0;
+			}
+		}
+		.top-bar-section{
+			margin-top: 12px;
+			ul{
+				li{
+					a.button{
+						border: none;
+						padding: 10px 20px;
+					}
+				}	
+			}	
+		}
+	}	
+}
+
+.page-container{
+	border: 1px solid #CCC;
+}
+
+.mini-banner{
+	p{
+		font-size: 24px;
+		line-height: 30px;
+		padding: 0 60px;
+	}
+}	
